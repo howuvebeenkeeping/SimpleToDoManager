@@ -6,12 +6,18 @@
 */
 {
   "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+  "references": [{
+      "path": "./tsconfig.app.json",
     },
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ],
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/@angular",
+      "node_modules/@angular/common/http",
+    ]
+  }
 }
